@@ -78,23 +78,13 @@
             <artifactId>container-test</artifactId>
             <version>${vespaversion}</version>
             <scope>test</scope>
-	    <exclusions>
-		    <exclusion>
-			    <groupId>org.apache.commons</groupId>
-			    <artifactId>commons-exec</artifactId>
-		    </exclusion>
-		    <exclusion>
-			    <groupId>commons-lang</groupId>
-			    <artifactId>commons-lang</artifactId>
-		    </exclusion>
-	    </exclusions>
         </dependency>
 
         <dependency>
             <groupId>com.yahoo.vespa</groupId>
             <artifactId>cloud-tenant-cd</artifactId>
             <version>${test-framework.version}</version>
-            <scope>runtime</scope>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
